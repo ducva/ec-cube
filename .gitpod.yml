@@ -1,0 +1,4 @@
+image: gitpod/workspace-mysql
+tasks:
+  - init: composer create-project ec-cube/ec-cube ec-cube "4.0.x-dev" --keep-vcs
+    command: cd ec-cube && bin/console server:run --env=dev 0.0.0.0:8000
